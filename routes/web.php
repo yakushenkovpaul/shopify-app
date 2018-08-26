@@ -15,7 +15,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+/*
 Route::get(
     '/',
     'App\Http\Controllers\HomeController@index'
 )->middleware('auth.shop')->name('home');
+*/
