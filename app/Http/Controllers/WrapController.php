@@ -23,14 +23,7 @@ class WrapController extends Controller
 
     public function index()
     {
-        $config = array(
-            'ShopUrl' => 'birkastyle.myshopify.com',
-            'ApiKey' => '9a65e3a7bc406d57c60cfe1bece6aea7',
-            'Password' => 'e0491522870cf30b73d5a88a35e64f1b'
-        );
-
-        $shopify = new \PHPShopify\ShopifySDK($config);
-        $result = $shopify->Order->get();
+        echo 'Hello world!';
     }
 
     public function getProduct()

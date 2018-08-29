@@ -23,5 +23,5 @@ Route::get('/proxy', function () {
 
  Route::get('/page', 'WrapController@page')->name('page');
 
- /* Route::get('/wrap', 'WrapController@index')->name('wrap');
- Route::get('/wrap-addProduct', 'WrapController@addProduct')->name('wrap-addProduct'); */
+ Route::get('/wrap', 'WrapController@index')->name('wrap');
+//  Route::get('/wrap-addProduct', 'WrapController@addProduct')->name('wrap-addProduct');
