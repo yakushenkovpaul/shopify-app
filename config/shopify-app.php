@@ -218,6 +218,12 @@ return [
     */
 
     'webhooks' => [
+
+			// [
+			// 	'topic' => 'products/get',
+			// 	'address' => 'https://47c7c897.ngrok.io/webhook/products-get'
+		    // ]
+
         /*
             [
                 'topic' => env('SHOPIFY_WEBHOOK_1_TOPIC', 'orders/create'),
