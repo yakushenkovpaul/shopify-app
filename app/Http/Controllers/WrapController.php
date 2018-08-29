@@ -7,8 +7,6 @@ use Illuminate\Http\Request;
 
 class WrapController extends Controller
 {
-
-
 		public function page()
 		{
 			$config = array(
@@ -33,7 +31,6 @@ class WrapController extends Controller
         $shopify = new \PHPShopify\ShopifySDK($config);
         $result = $shopify->Order->get();
     }
-
 
     public function getProduct()
     {
