@@ -38,7 +38,7 @@ return [
             'channels' => ['single'],
         ],
 
-        'single' => [
+        'export' => [
             'driver' => 'single',
             'path' => storage_path('logs/laravel.log'),
             'level' => 'debug',

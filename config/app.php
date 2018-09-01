@@ -160,6 +160,7 @@ return [
         App\Providers\EventServiceProvider::class,
         \OhMyBrew\ShopifyApp\ShopifyAppProvider::class,
         App\Providers\RouteServiceProvider::class,
+        Krlove\EloquentModelGenerator\Provider\GeneratorServiceProvider::class,
 
     ],
 
