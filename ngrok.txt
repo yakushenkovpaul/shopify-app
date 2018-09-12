@@ -1,1 +1,0 @@
-ngrok http -host-header=shopify-app 80

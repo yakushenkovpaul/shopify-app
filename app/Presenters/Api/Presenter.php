@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Presenters\Export;
+namespace App\Presenters\Api;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -12,6 +12,11 @@ abstract class Presenter
     public function __construct(Model $model)
     {
         $this->model = $model;
+
+        if(!empty($_ENV['PRIVATE_EXPORT_SHOPIFY_TABLE']))
+        {
+            $this->model->setTable('data_' . $_ENV['PRIVATE_EXPORT_SHOPIFY_TABLE']);
+        }
     }
 
     public function __call($method, $args)

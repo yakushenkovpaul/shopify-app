@@ -40,7 +40,7 @@ return [
 
         'export' => [
             'driver' => 'single',
-            'path' => storage_path('logs/laravel.log'),
+            'path' => storage_path('logs/export/log.log'),
             'level' => 'debug',
         ],
 
